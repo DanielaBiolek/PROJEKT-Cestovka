@@ -5,33 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cestovka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
-<body>
+
+<body class="wholething">
     
 <header class="header">
     <img class="header__img" src="images/logo.svg" alt="Cestovka">
-    <ul class="nav">
-        <li class="nav__item">Last minute</li>
-        <li class="nav__item">Destinace</li>
-        <li class="nav__item">Časté otázky</li>
+    <ul class="header__nav">
+        <li class="header__item"><a class="header__item" href="#">Last minute</a></li>
+        <li class="header__item"><a class="header__item" href="#">Destinace</a></li>
+        <li class="header__item"><a class="header__item" href="#">Časté otázky</a></li>
     </ul>
 </header>
 
 <div>
-<article class="article">
+<article class="article article--big article--var1">
     <p class="article__price">17 600 Kč</p>
-    <h1 class="article__name article__name--big">Pohoda pod palmami</h1>
+    <h2 class="article__name article__name--big">Pohoda pod palmami</h2>
     <p class="article__text">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
 </article>
 
-<article>
+<article class="article article--small article--var2">
     <p class="article__price">8 490 Kč</p>
-    <h1 class="article__name article__name--small">Klid u jezera</h1>
+    <h2 class="article__name article__name--small">Klid u jezera</h2>
 </article>
 
-<article>
+<article class="article article--small article--var3">
     <p class="article__price">4 990 Kč</p>
-    <h1 class="article__name article__name--small">Výlet na kole</h1>
+    <h2 class="article__name article__name--small">Výlet na kole</h2>
 </article>
 </div>
 
@@ -61,51 +66,52 @@
 </section>
 </div>
 
-<h3 class="head">Last minute zájezdy</h3>
+<h1 class="head">Last minute zájezdy</h1>
 
 <div>
-<article class="article">
+<article class="article article--big article--var4">
     <p class="article__price">15 900 Kč</p>
-    <h1 class="article__name article__name--big">PRomantika u horského jezera</h1>
+    <h2 class="article__name article__name--big">PRomantika u horského jezera</h2>
     <p class="article__text">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
 </article>
 
-<article>
+<article class="article article--small article--var5">
     <p class="article__price">18 500 Kč</p>
-    <h1 class="article__name article__name--small">Grand Canyon</h1>
+    <h2 class="article__name article__name--small">Grand Canyon</h2>
 </article>
 
-<article>
+<article class="article article--small article--var6">
     <p class="article__price">8 900 Kč</p>
-    <h1 class="article__name article__name--small">Pěšky po Kanárských ostrovech</h1>
+    <h2 class="article__name article__name--small">Pěšky po Kanárských ostrovech</h2>
 </article>
 </div>
 
-<h3 class="head">Novinky</h3>
+<h1 class="head">Novinky</h1>
 
 <div>
 <section class="section">
-    <p>15. 8. 2020</p>
+    <p class="section__date"> 15. 8. 2020</p>
     <h2 class="section__name">Magický Zanzibar</h2>
     <p class="section__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
 </section>
 
 <section class="section">
-    <p>31. 9. 2020</p>
+    <p class="section__date">31. 9. 2020</p>
     <h2 class="section__name">Návrat českých občanů ze zahraničí</h2>
     <p class="section__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
 </section>
 
 <section class="section">
-    <p>6. 10. 2020</p>
+    <p class="section__date">6. 10. 2020</p>
     <h2 class="section__name">Na Kubu s PCR testem</h2>
     <p class="section__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
 </section>
 </div>
 
-<footer>
-    <p>©2021, Czechitas</p>
+<footer class="footer">
+    <p class="footer__info" >©2021, Czechitas</p>
 </footer>
+
 
 </body>
 </html>
