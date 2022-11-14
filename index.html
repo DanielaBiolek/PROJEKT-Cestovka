@@ -16,9 +16,9 @@
 <header class="header">
     <img class="header__img" src="images/logo.svg" alt="Cestovka">
     <ul class="header__nav">
-        <li class="header__item"><a class="header__item" href="#">Last minute</a></li>
-        <li class="header__item"><a class="header__item" href="#">Destinace</a></li>
-        <li class="header__item"><a class="header__item" href="#">Časté otázky</a></li>
+        <li class="header__item"><a class="header__link" href="#">Last minute</a></li>
+        <li class="header__item"><a class="header__link" href="#">Destinace</a></li>
+        <li class="header__item"><a class="header__link" href="#">Časté otázky</a></li>
     </ul>
 </header>
 
@@ -34,7 +34,7 @@
     <h2 class="article__name article__name--small">Klid u jezera</h2>
 </article>
 
-<article class="article article--small article--var3">
+<article class="article article--small article--var3 bottom-margin60">
     <p class="article__price">4 990 Kč</p>
     <h2 class="article__name article__name--small">Výlet na kole</h2>
 </article>
@@ -43,35 +43,43 @@
 <div>
 <section class="section">
     <img class="section__img" src="images/map.svg" alt="Mapa">
-    <h2 class="section__name">Podpora na místě</h2>
-    <p class="section__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
-</section>
+    <div class="section__info">
+        <h2 class="section__name">Podpora na místě</h2>
+        <p class="section__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+    </div>
+    </section>
 
 <section class="section">
     <img class="section__img" src="images/plane.svg" alt="Letadlo">
-    <h2 class="section__name">Služby na letišti</h2>
-    <p class="section__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+    <div class="section__info">
+        <h2 class="section__name">Služby na letišti</h2>
+        <p class="section__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+    </div>
 </section>
 
 <section class="section">
     <img class="section__img" src="images/globe.svg" alt="Zeměkoule">
-    <h2 class="section__name">Do celého světa</h2>
-    <p class="section__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+    <div class="section__info">
+        <h2 class="section__name">Do celého světa</h2>
+        <p class="section__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+    </div>
 </section>
 
-<section class="section">
+<section class="section bottom-margin40">
     <img class="section__img" src="images/shield.svg" alt="Brnění">
-    <h2 class="section__name">Vaše bezpečí</h2>
-    <p class="section__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+    <div class="section__info">
+        <h2 class="section__name">Vaše bezpečí</h2>
+        <p class="section__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+    </div>
 </section>
 </div>
 
-<h1 class="head">Last minute zájezdy</h1>
+<h1 class="headline">Last minute zájezdy</h1>
 
 <div>
 <article class="article article--big article--var4">
     <p class="article__price">15 900 Kč</p>
-    <h2 class="article__name article__name--big">PRomantika u horského jezera</h2>
+    <h2 class="article__name article__name--big">Romantika u horského jezera</h2>
     <p class="article__text">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
 </article>
 
@@ -80,31 +88,37 @@
     <h2 class="article__name article__name--small">Grand Canyon</h2>
 </article>
 
-<article class="article article--small article--var6">
+<article class="article article--small article--var6 bottom-margin40">
     <p class="article__price">8 900 Kč</p>
     <h2 class="article__name article__name--small">Pěšky po Kanárských ostrovech</h2>
 </article>
 </div>
 
-<h1 class="head">Novinky</h1>
+<h1 class="headline">Novinky</h1>
 
 <div>
-<section class="section">
-    <p class="section__date"> 15. 8. 2020</p>
-    <h2 class="section__name">Magický Zanzibar</h2>
-    <p class="section__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
+<section class="news">
+    <p class="news__date"> 15. 8. 2020</p>
+    <div class="news__info">
+        <h2 class="news__name">Magický Zanzibar</h2>
+        <p class="news__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
+    </div>
 </section>
 
-<section class="section">
-    <p class="section__date">31. 9. 2020</p>
-    <h2 class="section__name">Návrat českých občanů ze zahraničí</h2>
-    <p class="section__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
+<section class="news">
+    <p class="news__date">31. 9. 2020</p>
+    <div class="news__info">
+        <h2 class="news__name">Návrat českých občanů ze zahraničí</h2>
+        <p class="news__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
+    </div>
 </section>
 
-<section class="section">
-    <p class="section__date">6. 10. 2020</p>
-    <h2 class="section__name">Na Kubu s PCR testem</h2>
-    <p class="section__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
+<section class="news bottom-margin40">
+    <p class="news__date">6. 10. 2020</p>
+    <div class="news__info">
+        <h2 class="news__name">Na Kubu s PCR testem</h2>
+        <p class="news__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
+    </div>
 </section>
 </div>
 
