@@ -12,13 +12,23 @@ html {box-sizing: border-box;}
     --backgr2: #80808080;
     }
 
-.bottom-margin60 {
-    margin-bottom: 60px;
-}
-
-.bottom-margin40 {
+/*marginy-mobil*/
+.bottom-margin--mobil {
     margin-bottom: 40px;
 }
+
+/*marginy - tablet*/
+@media screen  and (min-width: 800px) {
+.bottom-margin--mobil {
+    margin-bottom: 0
+}
+
+.bottom-margin--tablet {
+    margin-bottom: 40px;
+}
+}
+
+/*dořešit marginy u loga a velkého obrázku - mobil i tablet*/
 
 .wholething  {
     padding: 0;
@@ -26,7 +36,7 @@ html {box-sizing: border-box;}
     max-width: calc(100% - 40px);
 }
 
-/*header*/
+/*header - mobil*/
 
 .header__img {
    display: block;
@@ -59,12 +69,27 @@ html {box-sizing: border-box;}
     background-color: var(--primary);
 }
 
-/*article*/
+/*header-tablet*/
+
+@media screen  and (min-width: 800px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__img {
+        margin: 0;
+    }
+
+}
+
+/*article-mobil*/
 
 .article {
     background-size: cover;
     background-color: var(--backgr2);
     padding: 20px;
+    background-position: center;
 }
 
 .article__price {
@@ -128,6 +153,22 @@ html {box-sizing: border-box;}
     background-image: url(images/zatoka.png);
 }
 
+/*articlee-tablet*/
+
+@media screen  and (min-width: 800px) {
+
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.article--big {
+    grid-column: span 2;
+}
+
+}
+    
 
 /*headline*/
 
@@ -170,6 +211,31 @@ html {box-sizing: border-box;}
 .section__img {
     justify-self: center;
 }
+
+/*tablet*/
+
+@media screen  and (min-width: 800px) {
+    .section {
+        display: block;
+        text-align: center;
+    }
+
+    .section__name {
+        margin: 20px;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
+    }
+
+    .section + .section {
+        margin: 0;
+    }
+}
+
+
 
 
 /*news*/
